@@ -29,6 +29,9 @@ from .prompts.assert_general_strategy import (  # noqa: F401  (public re-exports
     asset_general_strategy,
     rhinoscript_workflow,
 )
+from .prompts.hyperscaff_strategy import (  # noqa: F401  (public re-export)
+    hyperscaff_strategy,
+)
 
 # Auto-discover and register tool modules.
 # Each module under tools/ uses @mcp.tool() to register on import. To add a new
