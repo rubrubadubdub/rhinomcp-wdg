@@ -93,6 +93,7 @@ Categories:
   - `hyperscaff_list_methods` — full method catalog
   - `hyperscaff_start_here` — recommended call order
   - `hyperscaff_guide` — full automation guide
+  - `hyperscaff_cache_clear` — clear HyperScaff rules/bay/leg caches after policy changes
 
 - **Rulebook / scaffold configs**
   - `hyperscaff_rulebook` — assembly rulebook for a service+system+config
@@ -102,7 +103,14 @@ Categories:
 - **Bay automation**
   - `hyperscaff_bay_catalog`
   - `hyperscaff_bay_plan_straight_run` (READ — plan only)
-  - `hyperscaff_bay_place` (DESTRUCTIVE — drives HS_PlaceBay)
+  - `hyperscaff_bay_place`, `hyperscaff_bay_build`,
+    `hyperscaff_bay_place_relative`, `hyperscaff_bay_place_at_selected`,
+    `hyperscaff_bay_replace`, `hyperscaff_bay_regenerate`,
+    `hyperscaff_bay_fill_down`, `hyperscaff_bay_set_front_direction`,
+    `hyperscaff_bay_flip_front`, `hyperscaff_bay_set_front_from_active_view`,
+    `hyperscaff_bay_resize_selected` (DESTRUCTIVE)
+  - `hyperscaff_bay_refresh_selection` (READ)
+  - `hyperscaff_bay_find_duplicates` (CHANGES SELECTION STATE)
 
 - **Leg automation**
   - `hyperscaff_leg_catalog`

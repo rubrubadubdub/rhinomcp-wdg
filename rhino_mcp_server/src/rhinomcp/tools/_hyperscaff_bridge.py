@@ -134,7 +134,7 @@ def invoke(
             time.sleep(_DEFAULT_POLL_SECONDS)
 
         try:
-            with open(resp_path, "r", encoding="utf-8") as handle:
+            with open(resp_path, "r", encoding="utf-8-sig") as handle:
                 parsed = json.load(handle)
         except (OSError, json.JSONDecodeError) as exc:
             return {"ok": False, "method": method,
